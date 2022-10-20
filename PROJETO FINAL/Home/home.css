@@ -93,15 +93,16 @@ nav li a{
     text-align: center;
     display: block;
     font-family: Cinzel, sans-serif;
-    text-shadow: #000 2px 3px 2px;
-    font-weight: 600;
+    text-shadow: #000 -2px 2px 2px;
+    font-weight: 800;
     font-size: 30px;
     z-index: 2;
-    color: rgb(255, 191, 0);
+    color: rgb(255, 188, 140);
     opacity: 100%;
 }
 
 .textoHome h2{
+    text-shadow: none;
     font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 40px;
@@ -109,6 +110,7 @@ nav li a{
 }
 
 .textoHome h3{
+    text-shadow: none;
     font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -116,6 +118,7 @@ nav li a{
 }
 
 .textoHome h2 span{
+    text-shadow: none;
     font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 10px;
