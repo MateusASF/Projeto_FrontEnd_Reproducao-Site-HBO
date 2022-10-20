@@ -92,10 +92,10 @@ nav li a{
     position: absolute; 
     text-align: center;
     display: block;
-    font-family: Cinzel, sans-serif;
-    text-shadow: #000 -2px 2px 2px;
+    font-family: Kaushan Script;
+    text-shadow: #000 2px 3px 2px;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
     z-index: 2;
     color: rgb(255, 188, 140);
     opacity: 100%;
