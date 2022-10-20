@@ -92,7 +92,7 @@ nav li a{
     position: absolute; 
     text-align: center;
     display: block;
-    font-family: Poppins, sans-serif;
+    font-family: Cinzel, sans-serif;
     text-shadow: #000 2px 3px 2px;
     font-weight: 600;
     font-size: 30px;
@@ -102,18 +102,21 @@ nav li a{
 }
 
 .textoHome h2{
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
 
 .textoHome h3{
+    font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 20px;
     color: rgb(255, 255, 255);
 }
 
 .textoHome h2 span{
+    font-family: Poppins, sans-serif;
     font-weight: 400;
     font-size: 10px;
     color: rgb(255, 255, 255);
