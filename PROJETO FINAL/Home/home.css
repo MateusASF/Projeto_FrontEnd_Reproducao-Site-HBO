@@ -7,11 +7,13 @@
 }
 
 body {
-    background-color: #000;
+    background-color: rgb(3,3,40);
 }
 
 header{
-    background-color: #02021C;
+    background-color: #0000004e;
+    position: fixed;
+    width: 100%;
 }
 
 .logoHBO{
@@ -70,6 +72,7 @@ nav li a{
 .containerHome {
     display: flex;
     position: relative;
+    top: 63px;
     align-items: center;
     justify-content: center;
 }
