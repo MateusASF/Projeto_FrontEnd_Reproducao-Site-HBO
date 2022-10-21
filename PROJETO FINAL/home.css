@@ -1,73 +1,3 @@
-/*Header e layout base*/
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: rgb(3,3,40);
-}
-
-header{
-    z-index: 10;
-    background-color: #0000004e;
-    position: fixed;
-    width: 100%;
-}
-
-.logoHBO{
-    width: 180px;
-    margin: 15px;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-nav ul{
-    display: flex;
-    align-items: center;
-}
-
-nav li{
-    list-style-type: none;
-}
-
-nav li a{
-    color: #fff;
-    font-size: 15px;
-    font-family: Poppins,sans-serif;
-    font-weight: 500;
-    margin: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.assine-agora {
-    cursor: pointer;
-    color: #fff;
-    font-size: 15px;
-    font-family: Poppins,sans-serif;
-    font-weight: 500;
-    margin: 0 10px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: #8E2EE5;
-    border-radius: 15px;
-    padding: 4px 10px;
-    margin-right: 15px;
-}
-
-.assine-agora:hover {
-    background-color: #fff;
-    color: #02021C;
-    transition: .5s all;
-}
-
 /*------------------------------------*/
 /*Foto e texto da tela home*/
 .containerHome {
@@ -103,6 +33,13 @@ nav li a{
     opacity: 100%;
 }
 
+.estreia{
+    color: rgb(255, 209, 176);
+    margin-bottom: 35px;
+    font-size: 32px;
+    text-shadow: none;
+}
+
 .textoHome h2{
     text-shadow: none;
     font-family: Poppins, sans-serif;
@@ -132,16 +69,16 @@ nav li a{
     display: inline-block;
     cursor: pointer;
     color: #fff;
-    font-size: 35px;
+    font-size: 20px;
     font-family: Poppins,sans-serif;
     font-weight: 500;
-    margin: 20px 0;
+    margin: 15px 0;
     text-decoration: none;
     text-transform: uppercase;
     background-color: #8E2EE5;
     border: 4px solid #8E2EE5;
     border-radius: 30px;
-    padding: 4px 30px;
+    padding: 2px 20px;
 }
 
 .assine-agora2:hover {
@@ -152,7 +89,7 @@ nav li a{
 
 /*------------------------------------*/
 
-/*Tela responsiva?*/
+/*Tela home primeira parte responsiva*/
 @media (max-width: 800px) {
     .logoHBO{
         width: 120px;
@@ -241,8 +178,14 @@ nav li a{
     }
 }
 
+/*------------------------------------*/
+/*Tela de Planos*/
 .container-planos{
+    background: url(./imagens/fundo4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+    border-top: 40px solid rgb(3,3,40);
     top: 64px;
     display: flex;
     flex-direction: column;
@@ -269,6 +212,7 @@ nav li a{
 }
 
 .container-opcao-plano{
+    backdrop-filter: blur(10px);
     background-image: linear-gradient(#272045, transparent);
     border-radius: 6px;
     padding: 30px 40px;
@@ -327,5 +271,3 @@ nav li a{
     transition: .5s all ;
     
 }
-
-
