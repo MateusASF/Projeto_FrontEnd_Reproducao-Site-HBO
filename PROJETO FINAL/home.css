@@ -42,8 +42,8 @@
 
 .textoHome h2{
     text-shadow: none;
-    font-family: Poppins, sans-serif;
-    font-weight: 600;
+    font-family: oxygen;
+    font-weight: 700;
     font-size: 40px;
     color: rgb(255, 255, 255);
 }
@@ -88,8 +88,118 @@
 }
 
 /*------------------------------------*/
+/*Tela de Planos*/
+.container-planos{
+    background: url(./imagens/fundo7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-top: 40px solid rgb(3,3,40);
+    top: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-planos h2{
+    font-family: Poppins,sans-serif;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    margin: 30px;
+    padding: 10px;
+}
+
+.container-opcoes-plano{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+}
+
+.container-opcao-plano{
+    backdrop-filter: blur(10px);
+    background-image: linear-gradient(#272045, transparent);
+    border-radius: 6px;
+    padding: 30px 40px;
+    margin: 0 40px;
+    width: 500px;
+}
+
+.container-planos i{
+    margin: 10px 10px 10px 0;
+}
+
+.titulo-preco{
+    font-family: Poppins,sans-serif;
+    font-size: 28px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titulo-preco span{
+    font-family: oxygen;
+    color: #FF00E5;
+    font-weight: bold;
+}
+
+.descricao ul li{
+    list-style-type: none;
+    font-family: Poppins,sans-serif;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.botao-plano a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.botao-plano{
+    width: 310px;
+    margin: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-family: Poppins,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #8E2EE5;
+    border: 2px solid #8E2EE5;
+    border-radius: 30px;
+    padding: 4px 30px;
+}
+
+.botao-plano:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    transition: .5s all ;
+    
+}
+
 
 /*Tela home primeira parte responsiva*/
+@media (max-width: 1075px) {
+
+    .container-opcoes-plano{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    
+        #plano-mateus {
+            margin-top: 15px;
+        }
+    
+        
+    }
+
 @media (max-width: 800px) {
     .logoHBO{
         width: 120px;
@@ -123,7 +233,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) { 
     .logoHBO{
         width: 80px;
         margin: 8px;
@@ -176,98 +286,59 @@
         font-weight: 500;
         margin: 10px 0;
     }
+
+    /**Blocos-----------------*/
+    .container-planos h2 {
+        font-size: 6vw;
+    }
+
+    .container-opcao-plano{
+        width: 80%;
+        font-size: 2vw;
+    }
+
+    .container-opcao-plano p, .container-opcao-plano ul li{
+        width: 80%;
+        font-size: 4vw;
+    }
+
+    .botao-plano{
+        font-size: 2vw;
+        margin-left: 6vw;
+        width: 50vw;
+        text-align: center;
+    }
+
+
+
 }
 
-/*------------------------------------*/
-/*Tela de Planos*/
-.container-planos{
-    background: url(./imagens/fundo6.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-top: 40px solid rgb(3,3,40);
-    top: 64px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 320px) { 
+    .titulo-preco p{
+        font-size: 4vw;
+    }
 
-.container-planos h2{
-    font-family: Poppins,sans-serif;
-    color: #fff;
-    font-weight: 500;
-    font-size: 30px;
-    margin: 30px;
-    padding: 10px;
-}
+    .titulo-preco p:last-child{
+        text-align: end;
+    }
 
-.container-opcoes-plano{
-    width: 100%;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: top;
-}
+    .container-opcao-plano{
+        padding: 11px;
+        width: 75vw;
+    }
 
-.container-opcao-plano{
-    backdrop-filter: blur(10px);
-    background-image: linear-gradient(#272045, transparent);
-    border-radius: 6px;
-    padding: 30px 40px;
-    margin: 0 40px;
-    width: 500px;
-}
-
-.container-planos i{
-    margin: 10px 10px 10px 0;
-}
-
-.titulo-preco{
-    font-family: Poppins,sans-serif;
-    font-size: 28px;
-    color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.titulo-preco span{
-    color: #FF00E5;
-    font-weight: 600;
-}
-
-.descricao ul li{
-    list-style-type: none;
-    font-family: Poppins,sans-serif;
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.botao-plano a{
-    text-decoration: none;
-    color: #fff;
-}
-
-.botao-plano{
-    width: 310px;
-    margin: 50px;
-    cursor: pointer;
-    color: #fff;
-    font-size: 18px;
-    font-family: Poppins,sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #8E2EE5;
-    border: 2px solid #8E2EE5;
-    border-radius: 30px;
-    padding: 4px 30px;
-}
-
-.botao-plano:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    transition: .5s all ;
+    .container-opcao-plano ul li{
+        margin: 0;
+    }
     
+    .botao-plano {
+        margin-left: 9vw;
+    }
+
+    #plano-mateus {
+        margin-top: 2px;
+    }
 }
+
+
+
