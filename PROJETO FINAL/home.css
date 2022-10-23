@@ -75,16 +75,34 @@
     margin: 15px 0;
     text-decoration: none;
     text-transform: uppercase;
-    background-color: #8E2EE5;
     border: 4px solid #8E2EE5;
+    background-color: #8E2EE5;
     border-radius: 30px;
     padding: 2px 20px;
+    transform: translate(0);
+    overflow: hidden;
 }
 
-.assine-agora2:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
-    transition: .5s all ;
+.assine-agora2:hover{
+    background: rgba(3, 3, 40, 0.492);
+    transition: 0.75s;
+}
+
+.assine-agora2::before {
+    content: "";
+    position: absolute;
+    background: #8E2EE5;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    left: -120px;
+    transform: rotate(-40deg);
+    filter: blur(6px);
+}
+
+.assine-agora2:hover::before{
+    left: calc(100% + 3px);
+    transition: .75s; 
 }
 
 /*------------------------------------*/
@@ -174,14 +192,39 @@
     border: 2px solid #8E2EE5;
     border-radius: 30px;
     padding: 4px 30px;
+    transform: translate(0);
+    overflow: hidden;
 }
 
+.botao-plano:hover{
+    background: rgba(3, 3, 40, 0.492);
+    transition: 0.75s;
+}
+
+.botao-plano::before {
+    content: "";
+    position: absolute;
+    background: #8E2EE5;
+    width: 100px;
+    top: 0;
+    bottom: 0;
+    left: -120px;
+    transform: rotate(-40deg);
+    filter: blur(6px);
+}
+
+.botao-plano:hover::before{
+    left: calc(100% + 3px);
+    transition: .75s; 
+}
+
+/*
 .botao-plano:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     transition: .5s all ;
     
-}
+}*/
 
 
 /*Tela home primeira parte responsiva*/
@@ -201,11 +244,6 @@
     }
 
 @media (max-width: 800px) {
-    .logoHBO{
-        width: 120px;
-        margin: 10px;
-    }
-
     .containerHome {
         top: 50px;
     }
@@ -225,44 +263,11 @@
     .textoHome h2 span{
         font-size: 10px;
     }
-
-    .assine-agora2 {
-        font-size: 30px;
-        font-weight: 500;
-        margin: 10px 0;
-    }
 }
 
 @media (max-width: 600px) { 
-    .logoHBO{
-        width: 80px;
-        margin: 8px;
-    }
-
-    header{
-        width: 100%;
-        height: 50px;
-    }
-
     .containerHome {
         top: 50px;
-    }
-
-    nav a{
-        margin-top: 6px;
-        margin-left: 5px;
-    }
-
-    nav li a{
-        font-size: 12px;
-        margin: 0 5px;
-    }
-
-    .assine-agora {
-        font-size: 10px;
-        margin: 10px 8px;
-        margin-right: 10px;
-        text-align: center;
     }
 
     .textoHome {

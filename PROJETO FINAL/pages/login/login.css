@@ -1,0 +1,141 @@
+body {
+    background-image: url("/PROJETO FINAL/imagens/loginBackground.png");
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerLogin{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 100px;
+    font-family: Poppins;
+}
+
+.containerLogin h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.containerLogin a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #7B6AD1;
+    font-weight: 600;
+    height: 25px;
+}
+
+.containerLogin a:hover{
+    text-decoration: underline;
+    text-underline-position: under;
+}
+
+
+
+.login{
+    backdrop-filter: blur(100px);
+    background-color: rgba(59, 59, 59, 0.114);
+    border-radius: 3px;
+    padding: 60px 60px 30px 60px;;
+    display: block;
+    width: 950px;
+}
+
+.login label {
+    display: block;
+    color: white;
+}
+
+.login input {
+    margin: 30px 30px 30px 0;
+    width: 100%;
+    padding: 15px;
+    display: block;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 0.01mm solid white;
+    background-color: transparent;
+    color: white;
+    font-weight: 300;
+}
+
+.login input[type="submit"] {
+    background-color: rgba(151, 151, 151, 0.089);
+    width: 20%;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgba(151, 151, 151, 0.242);
+}
+
+.botõesLogin {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 966px){
+    .containerLogin{
+        padding: 4vw;
+        margin-top: 10vw;
+    }
+
+    .containerLogin h1{
+        font-size: 6vw;
+    }
+
+    .containerLogin a{
+        font-size: 2vw;
+        margin-top: 6vw;
+        height: 4vw;
+    }
+
+    .login{
+        padding: 30px 30px 10px 30px;;
+        display: block;
+        width: 80vw;
+        font-size: 2vw;
+    }
+
+    .login input {
+        margin: 5vw 2vw 2vw 0;
+        font-size: 3vw;
+    }
+
+    .login input[type="submit"] {
+        font-size: 1.8vw;
+        width: 14vw;
+    }
+}
+
+@media (max-width: 580px){
+    .containerLogin{
+        margin-top: 15vw;
+    }
+
+    .containerLogin a{
+        margin-top: 7vw;
+    }
+}
+
+@media (max-width: 310){
+    .containerLogin a{
+        margin-top: 8vw;
+    }
+}
