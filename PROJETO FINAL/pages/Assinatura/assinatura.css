@@ -1,12 +1,11 @@
 .logoHBO{
     width: 180px;
-    margin: 15px;
 }
 
-nav{
+header{
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;;
 }
 
 body {
@@ -19,6 +18,21 @@ body {
     background-image: none;
     background-color: transparent;
     border: 0;
+}
+
+.entrarAssinatura {
+    position: absolute;
+    right: 18px;
+    font-family: Poppins,sans-serif;
+}
+
+.entrarAssinatura a{
+    text-decoration: none;
+    color: #7e9de3;
+    text-transform: uppercase;
+    padding: 8px 25px;
+    border-radius: 8px;
+    font-size: 14px;
 }
 
 .container-Cabecalho{
@@ -36,7 +50,6 @@ body {
 }
 .container-Cabecalho nav{
     margin: 13px 0;
-    text-transform: uppercase;
 }
 .container-Cabecalho h1{
     margin: 18px 0;
@@ -45,6 +58,31 @@ body {
 
 .container-Cabecalho p{
     font-size: 14px;
+}
+
+.rodapeAssinatura{
+    display: flex;
+    background-color: #0f0635;
+    justify-content: center;
+    position: absolute;
+    top: 650px;
+    left: 0;
+    right: 0;
+}
+
+.rodapeAssinatura li{
+    padding: 30px 15px;
+}
+
+.rodapeAssinatura li a{
+    color: #9665b8;
+    text-transform: initial;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Courier, monospace; 
+}
+
+.rodapeAssinatura li a i{
+    margin-right: 3px;
 }
 
 
