@@ -28,6 +28,8 @@ nav{
     justify-content:space-between;
 }
 
+
+
 nav ul{
     display: flex;
     align-items: center;
