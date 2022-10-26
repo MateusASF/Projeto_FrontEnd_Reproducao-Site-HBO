@@ -101,19 +101,18 @@ main{
     list-style-type: none;
 }
 
-.aparelhos{
-
+.aparelhos i{
+    font-size: 10px;
+    color: #fff;
 }
 
 .aparelhos hr {
-    margin-top: 20px;
     color: white;
     height: 1px;    
     background-color: #fff;
 }
 
 .aparelhos p {
-    margin-bottom: 20px;
     color: white;
 }
 
@@ -121,9 +120,7 @@ main{
     text-decoration: none;
     color: #fff;
     background-color: #7c2abf73;
-    margin-top: 90px;
     padding: 10px 05px;
-    margin-top: 15px;
     border-radius: 20px;
     text-transform: uppercase;
     display: flex;
@@ -134,24 +131,28 @@ main{
 .aparelhos a:hover{
     background-color: #7c2abf;
     transition: .5s all;
+    color: #fff;
+    text-decoration: none;
 }
 
 
 
-/*?assinatura---------*/
+/*?rodapé---------*/
 
 .rodapeAssinatura{
     display: flex;
     background-color: #0f0635;
     justify-content: center;
     position: absolute;
-    top: 650px;
+    top: 720px;
     left: 0;
     right: 0;
 }
 
 .rodapeAssinatura li{
     padding: 30px 15px;
+    color: #9665b8;
+
 }
 
 .rodapeAssinatura li a{
