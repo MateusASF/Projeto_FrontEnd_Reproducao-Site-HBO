@@ -263,7 +263,7 @@ section {
 }
 
 .showroom-container {
-    width: 80vw;
+    width: 70vw;
 }
 
 .showroom-container .swiper .content .card {
@@ -348,14 +348,6 @@ section .card .image img:hover {
     opacity: 1;
     color: #ffffff;
 }
-
-
-
-
-
-
-
-
 
 /*Tela home primeira parte responsiva*/
 @media (max-width: 1075px) {
