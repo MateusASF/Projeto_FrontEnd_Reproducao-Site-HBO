@@ -14,15 +14,25 @@
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Kaushan+Script&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/bd88afff23.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Projeto Final - Login</title>
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="menu-links">
+                <button id="menuButton" class="menu-header" onclick="clickMenu()"> 
+                    <span></span><span></span><span></span>
+                </button>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:movies">Filmes</a>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:series">Séries</a>
+            </div>
             <a href="../../index.html"><img class="logoHBO" src="../../imagens/logoHBOMax.png"
                     alt="logo"></a>
             <ul>
+                
+                <li><a id="search-icon" href="https://play.hbomax.com/search"><i id="search-icon"class="material-icons">search</i></a></li>
                 <li><a href="#">Entrar</a></li>
                 <li><a href="../Assinatura/assinatura.html" class="assine-agora">Assine Agora</a></li>
             </ul>
@@ -50,8 +60,32 @@
                 entrar?</a>
         </div>
     </main>
-
-
+    <dialog open id="menuLateral">
+        <button id="fecharMenuLateral" onclick="closeMenu()">X</button>
+        <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:series">Séries</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:movies">Filmes</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:originals">Originais</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:just-added">Adicionados Recentemente</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:last-chance">Últimos Dias</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:coming-soon">Em Breve</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:trending">Em Alta</a></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:lfe-spotlight">Aproveite grátis</a></li>
+            <li><hr></li>
+            <li><a href="https://play.hbomax.com/page/urn:hbo:page:action" id="generos"><p>Gêneros</p><p>></p></a></li>
+            <li><hr></li>
+        </ul>
+        <div class="logos-container">
+            <div class="logos">
+                <a href="https://play.hbomax.com/page/urn:hbo:page:hbo"><img src="../../imagens/menuLateralLogoHBO.png" alt="logo-HBO"></a>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:max-originals"><img src="../../imagens/menuLateralLogoHBOMax.png" alt="logo-HBOMax"></a>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:warner-brothers"><img src="../../imagens/menuLateralLogoWarner.png" alt="logo-Warner"></a>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:dc"><img src="../../imagens/menuLateralLogoDC.png" alt="logo-DC"></a>
+                <a href="https://play.hbomax.com/page/urn:hbo:page:cartoon-network"><img src="../../imagens/menuLateralLogoCN.png" alt="logo-CN"></a>
+            </div>
+        </div>
+    </dialog>
     <footer></footer>
 </body>
 
