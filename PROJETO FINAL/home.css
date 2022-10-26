@@ -222,16 +222,16 @@ nav ul li{
     transition: .75s; 
 }
 
-/*
 .botao-plano:hover {
     background-color: rgba(0, 0, 0, 0.4);
     color: #fff;
     transition: .5s all ;
     
-}*/
+}
 
 /*?CARROSSEL-------------------*/
-.swapper{
+
+.swapper {
     position: relative;
     height: 850px;
     width: 1300px;
@@ -240,7 +240,7 @@ nav ul li{
     flex-direction: column;
 }
 
-.swapper h3{
+.swapper h3 {
     margin-top: 80px;
     margin-bottom: 40px;
     font-family: Poppins, sans-serif;
@@ -248,29 +248,38 @@ nav ul li{
     color: #fff;
 }
 
-
 section {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(3,3,40);
+    background: rgb(3, 3, 40);
     position: relative;
     top: 60px;
 }
 
-.showroom-container{
-    width: 70vw;
+.swiper {
+    width: 1300px;
 }
 
-.showroom-container .swiper .content .card{
-    background-color: rgb(3,3,40)
+.showroom-container {
+    width: 80vw;
 }
 
-.swapper a{
+.showroom-container .swiper .content .card {
+    background-color: rgb(3, 3, 40)
+}
+
+.showroom-container .swiper .content .card a {
+    background-color: transparent;
+    border: none;
+}
+
+
+.swapper .explorarMais {
     text-decoration: none;
     text-align: center;
-    color: rgb(3,3,40);
+    color: rgb(3, 3, 40);
     font-family: Poppins, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
@@ -281,9 +290,9 @@ section {
     margin-top: 30px;
 }
 
-.swapper a:hover{
+.swapper .explorarMais:hover {
     transition: .75s all;
-    background-color: rgb(3,3,40);
+    background-color: rgb(3, 3, 40);
     color: white;
 }
 
@@ -299,7 +308,7 @@ section {
     align-items: center;
     position: relative;
     z-index: 100;
-    background-color: rgb(3,3,40);
+    background-color: rgb(3, 3, 40);
 }
 
 section .card .image {
@@ -307,7 +316,6 @@ section .card .image {
     width: 100%;
     cursor: pointer;
     padding: 10px;
-    
 }
 
 section .card .image img {
@@ -324,13 +332,9 @@ section .card .image img:hover {
     opacity: 100%;
 }
 
-
-
 .swiper-pagination {
     position: absolute;
 }
-
-
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -344,6 +348,13 @@ section .card .image img:hover {
     opacity: 1;
     color: #ffffff;
 }
+
+
+
+
+
+
+
 
 
 /*Tela home primeira parte responsiva*/
