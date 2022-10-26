@@ -9,7 +9,7 @@ header{
 }
 
 body {
-    background-image: url("/PROJETO FINAL/imagens/fundoAssinatura.png");
+    background-image: url("../../imagens/fundoAssinatura.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
