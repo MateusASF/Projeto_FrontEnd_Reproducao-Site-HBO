@@ -3,6 +3,9 @@
 nav ul li{
     margin-top: 15px;
 }
+.entrar{
+    color: #fff;
+}
 
 .containerHome {
     z-index: 1;
@@ -90,6 +93,7 @@ nav ul li{
 .assine-agora2:hover{
     background: rgba(3, 3, 40, 0.492);
     transition: 0.75s;
+    color: #fff;
 }
 
 .assine-agora2::before {
