@@ -90,10 +90,13 @@ main{
     flex-direction: row;
 }
 
+/**-----Menu Lateral------*/
+
 #search-icon{
     position: relative;
     bottom: -1px;
 }
+
 
 .menu-links{
     margin-left: 50px;
@@ -109,6 +112,36 @@ main{
     color: rgb(185, 185, 185);
     margin: 0 10px;
 }
+
+.menu-links a:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.75s all;
+}
+
+.material-icons{
+    color: rgb(185, 185, 185);
+}
+
+.material-icons:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.75s all;
+}
+
+.entrar{
+    color: rgb(185, 185, 185);
+}
+
+.entrar:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.75s all;
+}
+
+.assine-agora{
+    background-color: #858585bd;
+    padding: 10px 15px;
+    color: #fff;
+}
+
 
 .menu-header{
     cursor: pointer;
@@ -207,6 +240,8 @@ main{
     transition: all 0.75;
     width: 90px;
 }
+
+/**-----Responsividade------*/
 
 @media (max-width: 966px){
     .containerLogin{
