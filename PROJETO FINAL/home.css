@@ -183,6 +183,11 @@ nav ul li{
     color: #fff;
 }
 
+.botao-plano a:hover{
+    color: #fff;
+}
+
+
 .botao-plano{
     width: 310px;
     margin: 50px;
