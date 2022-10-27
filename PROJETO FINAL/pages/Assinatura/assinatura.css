@@ -178,6 +178,7 @@ main{
 
 .formsDados{
     text-align: center;
+    background-color: rgb(67, 134, 0);
 }
 
 .formsDados p{
@@ -201,13 +202,19 @@ main{
     align-items: center;
 }
 
+.formsDados form{
+    align-items: stretch;
+}
+
 
 .names{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-self: space-between;
-    margin: 10px 40px;
+    justify-content: space-between;
+    margin: 10px 0;
+    background-color: aqua;
+    width: 100%;
 }
 
 #nome{
