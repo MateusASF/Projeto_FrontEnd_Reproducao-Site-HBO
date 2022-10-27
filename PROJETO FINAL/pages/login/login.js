@@ -9,6 +9,7 @@ function logar(){
     }
 }
 
+
 function clickMenu(){
     menuLateral.style.display = menuLateral.style.display == 'block' ? 'none' : 'block';
 }

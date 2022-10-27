@@ -178,11 +178,10 @@ main{
 
 .formsDados{
     text-align: center;
-    background-color: rgb(67, 134, 0);
 }
 
 .formsDados p{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .formsDados h1{
@@ -207,14 +206,45 @@ main{
 }
 
 
+form input{
+    margin: 20px 0;
+    padding: 8px 0;
+    background-color: rgba(82, 82, 82, 0.05);
+    border-bottom: 2px solid rgb(197, 197, 197);
+    color: #fff;
+    outline: none;
+}
+
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.65);
+    background-color: transparent;
+    border: none;
+}
+
+
 .names{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0;
-    background-color: aqua;
+    margin: 8px 0;
     width: 100%;
+}
+
+.names input{
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 2px solid rgb(197, 197, 197);
+}
+
+.names input:first-child{
+    margin-right: 40px;
+}
+
+.names input::placeholder{
+    color: rgba(255, 255, 255, 0.65);
+    background-color: transparent;
+    border: none;
 }
 
 #nome{
@@ -226,21 +256,34 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #7c2abf;
-    font-family: Arial;
-    font-size: 8px;
+    background-color: #96969639;
+    backdrop-filter: blur(15px);
     padding: 18px;
     border-radius: 20px;
     margin: 20px 0;
+    text-align: justify;
+}
+
+.criar-conta h3 {
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: 100;
 }
 
 .criar-conta input{
     margin: 15px 0;
     padding: 10px 20px;
     border-radius: 15px;
+    background-color: #7b2abf;
+    border: none;
+    padding: 1rem 4rem;
+    color: #fff;
+    font-weight: bold;
+    z-index: 20;
 }
 
 .recusa{
     font-family: Arial;
-    padding: 15px;
+    font-size: 8px;
+    border-bottom: 20px;
 }

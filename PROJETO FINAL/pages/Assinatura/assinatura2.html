@@ -28,17 +28,17 @@
             <div class="planoEscolhido">
             </div>
             <div class="formsDados">
-                <p>PASSO 2 DE 3</p>
+                <p>PASSO 2 DE 2</p>
                 <h1>Criar conta</h1>
                 <h2>Tenha acesso a uma grande variedade de entretenimento em qualquer lugar, a qualquer momento.</h2>
                 <form>
                     <div class="names">
-                        <input type="text" id="nome" placeholder="Nome">
-                        <input type="text" id="sobrenome" placeholder="sobrenome">
+                        <input type="text" name="nome" placeholder="Nome">
+                        <input type="text" name="sobrenome" placeholder="Sobrenome">
                     </div>
-                    <input type="email" id="email" placeholder="Endereço de email">
-                    <input type="password" id="senha" placeholder="Senha">
-
+                    <input type="email" name="email" placeholder="Endereço de email">
+                    <input type="password" name="senha" placeholder="Senha">
+    
                     <div class="criar-conta">
                         <h3>Ao clicar em Criar conta, você confirma que você tem pelo menos 18 anos, que concorda com os
                             Termos de Uso e que leu nossa Política de Privacidade. Você também confirma que aceita
@@ -47,17 +47,26 @@
                             tratamento das informações pessoais coletadas por meio desse perfil conforme descrito na
                             Política de Privacidade, caso esse consentimento seja necessário no local onde você reside.
                         </h3>
-                        <input type="submit" id="submit" value="CRIAR CONTA">
+                        <input type="submit" value="CRIAR CONTA">
                     </div>
                 </form>
-                <p class="recusa">Para recusar a participação a qualquer momento ou saber mais sobre seus direitos e como exercê-los,
+                <script src="./assinatura.js"></script>
+                <p class="recusa">Para recusar a participação a qualquer momento ou saber mais sobre seus direitos e como
+                    exercê-los,
                     consulte as opções disponíveis na Política de Privacidade.</p>
             </div>
         </div>
     </main>
 
 
-    <footer></footer>
+    <footer>
+        <nav class="rodapeAssinatura">
+            <li><a href="https://www.hbomax.com/privacy" target="_blank">Política de Privacidade</a></li>
+            <li><a href="https://www.hbomax.com/terms-of-use" target="_blank">Termos de Uso</a></li>
+            <li><a href="https://help.hbomax.com/br" target="_blank">Ajuda</a></li>
+            <li><a><i class="fas fa-globe-americas"></i>Português (Brasil)</a></li>
+        </nav>
+    </footer>
 </body>
 
 </html>
