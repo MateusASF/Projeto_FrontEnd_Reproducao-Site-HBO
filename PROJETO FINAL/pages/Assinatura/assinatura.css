@@ -20,7 +20,7 @@ main{
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 70px;
     left: 0;
     right: 0;
 }
@@ -68,6 +68,31 @@ main{
     font-size: 14px;
 }
 
+
+/*?Escolha---------*/
+
+.planoEscolhido{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .5rem;
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: #96969639;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+}
+
+.planoEscolhido p{
+    font-size: 14px;
+}
+.planoEscolhido p a i{
+    margin-left: 10px;
+    text-decoration: none;
+    color: #fff;
+}
 
 /*?planos---------*/
 
@@ -260,14 +285,24 @@ form input::placeholder{
     backdrop-filter: blur(15px);
     padding: 18px;
     border-radius: 20px;
-    margin: 20px 0;
+    margin: 15px 0;
     text-align: justify;
+    line-height: 15px;
 }
 
 .criar-conta h3 {
     font-family: Arial;
     font-size: 10px;
     font-weight: 100;
+}
+
+.criar-conta h3 a{
+    color: #85a3e9;
+    text-decoration: none;
+}
+
+.criar-conta h3 a:hover{
+    cursor: pointer;
 }
 
 .criar-conta input{
