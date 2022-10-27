@@ -1,16 +1,28 @@
 *{
-    background-color: black;
-}
-
-main{
-    margin-top: 350px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
 
 header{
     top:0;
 }
 
+body{
+    background-color: #000;
+}
+
+.imagemFundo{
+    height: 740px;
+    background-image: url("../../imagens/fundo_plano_sergio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .containerTitulo{
+    position: relative;
+    top: 350px;
     margin-left: 60px;
     display: flex;
     flex-direction: column;
@@ -28,6 +40,17 @@ header{
 .containerTitulo p{
     text-transform: uppercase;
     font-size: 12px;
+}
+
+.containerTitulo .idade, .idade{
+    background: #D8AC00;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0px;
+    padding:0px 2px;
+    border: 1px solid #fff;
+    border-radius: 3px;
 }
 
 .fa-play{
@@ -59,13 +82,83 @@ header{
     justify-content: start;
 }
 
+.links-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.links-conteudo:hover{
+    color: #fff;
+    transition: 0.75 all;
+}
+
 .trailer{
     margin-left: 15px;
-    margin-right: 5px;
 }
-
-/*?--------GRID------------*/
 
 .equipe{
-    color: yellowgreen;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+    margin-left: 40px;
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
+
+.equipe ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 50%;
+    margin: 10px 0 20px 0;
+}
+
+.equipe ul li{
+    list-style-type: none;
+    color: rgb(185, 185, 185);
+}
+
+
+footer{
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    color: rgb(185, 185, 185);
+}
+
+footer .copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 40px;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(185, 185, 185);
+}
+
+footer a:hover{
+    color: #fff;
+    transition: all 0.75s;
+}
+
+footer .ultimaLinha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+
+footer .ultimaLinha .icons a{
+    margin-left: 28px;
+    font-size: 16px;
+}
+
+footer .ultimaLinha .text a{
+    margin-left: 14px;
+}
+
