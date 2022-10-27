@@ -165,3 +165,75 @@ main{
 .rodapeAssinatura li a i{
     margin-right: 3px;
 }
+
+
+/**-----Fase 2------*/
+
+.containerFase2 {
+    width: 50%;
+    padding: 20px;
+    font-family: Poppins, sans-serif;
+    color: #fff;
+}
+
+.formsDados{
+    text-align: center;
+}
+
+.formsDados p{
+    font-size: 12px;
+}
+
+.formsDados h1{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.formsDados h2{
+    font-size: 12px;
+}
+
+.formsDados form{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.names{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: space-between;
+    margin: 10px 40px;
+}
+
+#nome{
+    margin-right: 15px;
+}
+
+.criar-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7c2abf;
+    font-family: Arial;
+    font-size: 8px;
+    padding: 18px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.criar-conta input{
+    margin: 15px 0;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.recusa{
+    font-family: Arial;
+    padding: 15px;
+}
