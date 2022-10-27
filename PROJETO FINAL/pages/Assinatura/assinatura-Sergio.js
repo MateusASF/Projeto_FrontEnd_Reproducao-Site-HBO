@@ -7,5 +7,5 @@ form.addEventListener('submit', (e) => {
         method: "POST",
         body: data
     })
-   .then(window.location.href="../../index.html");
+   .then(window.location.href="../Sergio/sergio.html");
 });
