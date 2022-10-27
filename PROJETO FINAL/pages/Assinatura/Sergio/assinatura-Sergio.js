@@ -3,9 +3,9 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     let data = new FormData(form);
     console.log(data);
-    fetch('https://script.google.com/macros/s/AKfycbxG4yNNjFbZqea1Lax2PZa9H1k5Bj-3xb_wuhG8oKe1Hv_cXOv60fzzTnLk9XAz1tV2/exec', {
+    fetch('https://script.google.com/macros/s/AKfycbxewNWf-q5KJAxBqpld2DPpXhSvJjOf3fwrOf1gqW6nW4b5nPhSp6U4GnBOexvux9IM/exec', {
         method: "POST",
         body: data
     })
-   .then(window.location.href="../Sergio/sergio.html");
+   .then(window.location.href="../../Sergio/sergio.html");
 });
