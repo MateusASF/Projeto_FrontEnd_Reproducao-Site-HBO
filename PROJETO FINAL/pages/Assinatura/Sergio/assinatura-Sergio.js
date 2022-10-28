@@ -6,5 +6,8 @@ form.addEventListener('submit', (e) => {
         method: "POST",
         body: data
     })
-   .then(window.location.href="../../Sergio/sergio.html");
+
+    setTimeout(()=>{
+        window.location.href="../../Sergio/sergio.html";
+       }, 5000);
 });
