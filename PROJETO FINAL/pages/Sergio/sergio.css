@@ -18,6 +18,7 @@ body{
     background-image: url("../../imagens/fundo_plano_sergio.png");
     background-size: cover;
     background-repeat: no-repeat;
+    width: fit-content;
 }
 
 .containerTitulo{
@@ -162,20 +163,9 @@ footer .ultimaLinha .text a{
     margin-left: 14px;
 }
 
-
-/**-----Menu Lateral------*/
-
 #search-icon{
     position: relative;
     bottom: -1px;
-}
-
-
-.logoHBO{
-    position: absolute;
-    top: -1px;
-    left: 45%;
-    right: 50%;
 }
 
 .menu-links{
@@ -320,4 +310,93 @@ footer .ultimaLinha .text a{
 .logos a img:hover{
     transition: all 0.75;
     width: 90px;
+}
+
+@media (max-width: 850px){
+    .menu-links a{
+        display: none;
+    }
+
+    .menu-links{
+        width:fit-content;
+    }
+
+    header nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .containerTitulo{
+        width: fit-content;
+    }
+
+    .equipe{
+        flex-wrap: no-wrap;
+        height: auto;
+    }
+
+    footer .copyright{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    footer .ultimaLinha{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    }
+    
+    
+    footer .ultimaLinha .icons a{
+        margin-left: 28px;
+        font-size: 16px;
+    }
+    
+    footer .ultimaLinha .text a{
+        margin-left: 14px;
+    }
+}
+
+@media (max-width: 690px){
+    .equipe ul li{
+        margin: 10px 0;
+    }
+
+    .ultimaLinha .icons{
+        width: 130px;
+    } 
+    .ultimaLinha .text{
+        width: 200px;
+    } 
+    
+    #menuLateral{
+        width: 50vw;
+        font-size: 4vw;
+        padding: 30px 10px;
+    }
+
+    #fecharMenuLateral, #generos p:last-child{
+        font-size: 4vw;
+    }
+
+    .logos a img{
+        width: 10vw;
+    }
+    
+    .logos a img:hover{
+        width: 11vw;
+    }
+
+@media (max-width: 440px){
+    .imagemFundo{
+        height: 820px;
+    }
+
+    .ultimaLinha .icons{
+        width: 76px;
+    } 
+}
 }
