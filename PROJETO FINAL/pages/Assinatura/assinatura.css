@@ -373,6 +373,10 @@ form input::placeholder{
         margin-top: 40px;
     }
 
+    .container-Cabecalho p{
+        padding: 15px;
+    }
+
     .entrarAssinatura{
         width: 100%;
         text-align: center;
