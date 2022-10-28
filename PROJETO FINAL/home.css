@@ -366,6 +366,7 @@ footer{
     align-items: center;
     justify-content: center;
     color: #9E86FF;
+    width: 100%;
 }
 
 
@@ -439,7 +440,36 @@ footer{
         }
     
         
+}
+
+@media (max-width: 935px){
+    .swapper h3{
+        font-size: 20px;
+        height: 100px;
+        text-align: center;
     }
+
+    .swapper .explorarMais{
+        font-size: 12px;
+    }
+
+    footer{
+        margin-top: 10px;
+    }
+
+    .links-footer{
+        font-size: 12px;
+    }
+
+    .links-contratos{
+        font-size: 10px;
+    }
+
+    .icons{
+        font-size: 15px;
+        z-index: 20;
+    }
+}
 
 @media (max-width: 800px) {
     .containerHome {
@@ -461,6 +491,7 @@ footer{
     .textoHome h2 span{
         font-size: 10px;
     }
+
 }
 
 @media (max-width: 600px) { 
@@ -512,11 +543,89 @@ footer{
         text-align: center;
     }
 
+    /**Swapper-----------------*/
+
+    .swapper{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .swapper h3{
+        font-size: 16px;
+        height: 100px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .swapper .explorarMais{
+        font-size: 8px;
+        padding: 8px 15px;
+    }
+
+    /**-----FOOTER-----*/
+
+    footer section{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer{
+        position: absolute;
+        width: 100%;
+        z-index: 40;
+        bottom:-2300px;
+        height: 20px;
+        margin-top: 6px;;
+    }
+
+
+    .links-footer{
+        font-size: 8px;
+        margin: 0;
+        text-align: center;
+    }
+
+    section .copywright p{
+        font-size: 10px;
+    }
+
+    .links-contratos{
+        font-size: 6px;
+    }
+
+    .icons{
+        font-size: 13px;
+        z-index: 20;
+    }
 
 
 }
 
+@media (max-width: 420px) {
+    footer{
+    bottom:-2100px;
+    }
+
+    .links-footer{
+        width: 100%;
+    }
+
+    .links-footer a{
+        margin: 0 5px 0 0;
+    }
+}
+
+
 @media (max-width: 320px) { 
+    nav ul li a{
+        font-size: 8px;
+    }
+
+    nav a.assine-agora{
+        font-size: 8px;
+    }
+
+
     .titulo-preco p{
         font-size: 4vw;
     }
@@ -541,6 +650,12 @@ footer{
     #plano-mateus {
         margin-top: 2px;
     }
+
+    
+    footer{
+        bottom:-1700px;
+    }
+    
 }
 
 
