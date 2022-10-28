@@ -321,6 +321,21 @@ form input::placeholder{
 }
 
 /*!------RESPONSIVIDADE---------*/
+@media (max-width:1160px) {
+    footer{
+        position: absolute;
+        top: 550px;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+@media (max-width:900px){
+    .containerFase2{
+        width: 80%;
+    }
+}
 
 @media (max-width:800px) {
 
@@ -348,7 +363,7 @@ form input::placeholder{
 
     footer{
         position: absolute;
-        top: 350px;
+        top: 450px;
         left: 0;
         right: 0;
     }
@@ -391,11 +406,27 @@ form input::placeholder{
         top: 15px;
         z-index: 20;
     }
-}
 
-@media (max-width:800px){
-    footer{
-        top: 500px;
+    .containerFase2{
+        margin-top: 50px;
+    }
+
+    .planoEscolhido{
+        flex-direction: column;
+    }
+
+    .names{
+        flex-direction: column;
+    }
+
+    .names input:first-child{
+        margin-right: 0;
+    }
+
+    .criar-conta input{
+        padding: 10px 15px;
     }
 }
+
+
 
