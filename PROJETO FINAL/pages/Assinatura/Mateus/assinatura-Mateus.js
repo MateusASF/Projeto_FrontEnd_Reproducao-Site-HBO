@@ -10,5 +10,5 @@ form.addEventListener('submit', (e) => {
     
   setTimeout(()=>{
     window.location.href="../../Mateus/mateusAugusto.html";
-   }, 5000); 
+   }, 1000); 
 });
