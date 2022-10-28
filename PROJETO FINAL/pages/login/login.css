@@ -90,16 +90,13 @@ main{
     flex-direction: row;
 }
 
-/**-----Menu Lateral------*/
-
 #search-icon{
     position: relative;
     bottom: -1px;
 }
 
-
 .menu-links{
-    margin-left: 50px;
+    margin-left: 36px;
     width: 210px;
     display: flex;
     align-items: center;
@@ -109,6 +106,8 @@ main{
 .menu-links a{
     text-decoration:none;
     font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     color: rgb(185, 185, 185);
     margin: 0 10px;
 }
@@ -122,13 +121,25 @@ main{
     color: rgb(185, 185, 185);
 }
 
-.material-icons:hover{
+.fa-icon{
+    color: rgb(185, 185, 185);
+    border-radius: 50%;
+    padding: 6px 10px;
+    background-color: rgba(255, 255, 255, 0.12);
+    display: none;
+}
+
+.material-icons:hover, .fa-icon:hover{
     color: rgb(255, 255, 255);
     transition: 0.75s all;
 }
 
 .entrar{
     color: rgb(185, 185, 185);
+    text-transform: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .entrar:hover{
@@ -137,9 +148,18 @@ main{
 }
 
 .assine-agora{
-    background-color: #858585bd;
-    padding: 10px 15px;
-    color: #fff;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: none;
+}
+
+.itens-direita{
+    width:210px;
+    margin-right: 36px;
 }
 
 
@@ -285,6 +305,38 @@ main{
     .containerLogin a{
         margin-top: 7vw;
     }
+
+    .assine-agora, .entrar, .menu-links a{
+        display: none;
+    }
+
+    .fa-icon{
+        display: block;
+    }
+
+    .itens-direita, .menu-links{
+        width: auto;
+        margin: 0 auto;
+    }
+
+    #menuLateral{
+        width: 50vw;
+        font-size: 4vw;
+        padding: 30px 10px;
+    }
+
+    #fecharMenuLateral, #generos p:last-child{
+        font-size: 4vw;
+    }
+
+    .logos a img{
+        width: 10vw;
+    }
+    
+    .logos a img:hover{
+        width: 11vw;
+    }
+
 }
 
 @media (max-width: 310){
