@@ -5,13 +5,15 @@
 header{
     display: flex;
     align-items: center;
-    justify-content: center;;
+    justify-content: center;
 }
 
 body {
     background-image: url("../../imagens/fundoAssinatura.png");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 main{
@@ -23,12 +25,6 @@ main{
     top: 70px;
     left: 0;
     right: 0;
-}
-
-.container-planos{
-    background-image: none;
-    background-color: transparent;
-    border: 0;
 }
 
 .entrarAssinatura {
@@ -323,5 +319,114 @@ form input::placeholder{
     font-size: 8px;
     border-bottom: 20px;
 }
+
+/*!------RESPONSIVIDADE---------*/
+@media (max-width:1160px) {
+    footer{
+        position: absolute;
+        top: 550px;
+        left: 0;
+        right: 0;
+    }
+
+}
+
+@media (max-width:900px){
+    .containerFase2{
+        width: 80%;
+    }
+}
+
+@media (max-width:800px) {
+
+    .container-Cabecalho nav{
+        font-size: 12px;
+    }
+
+    .container-Cabecalho h1{
+        font-size: 20px;
+    }
+
+    .container-Cabecalho p{
+        font-size: 11px;
+    }
+
+    .containerPlanos{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .planos{
+        margin: 20px 0;
+    }
+
+    footer{
+        position: absolute;
+        top: 450px;
+        left: 0;
+        right: 0;
+    }
+    
+    .rodapeAssinatura{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rodapeAssinatura li{
+        padding: 5px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:400px){
+    header{
+        height: 110px;
+    }
+
+    .container-Cabecalho{
+        margin-top: 40px;
+    }
+
+    .container-Cabecalho p{
+        padding: 15px;
+    }
+
+    .entrarAssinatura{
+        width: 100%;
+        text-align: center;
+    }
+
+    .entrarAssinatura a{
+        position: absolute;
+        padding: 15px;
+        margin-left: 35px;
+        left: 0;
+        right: 0;
+        top: 15px;
+        z-index: 20;
+    }
+
+    .containerFase2{
+        margin-top: 50px;
+    }
+
+    .planoEscolhido{
+        flex-direction: column;
+    }
+
+    .names{
+        flex-direction: column;
+    }
+
+    .names input:first-child{
+        margin-right: 0;
+    }
+
+    .criar-conta input{
+        padding: 10px 15px;
+    }
+}
+
 
 
