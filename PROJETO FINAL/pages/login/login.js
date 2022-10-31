@@ -1,10 +1,15 @@
 function logar(){
     var login = document.getElementById('login').value;
     var senha = document.getElementById('senha').value;
-    if(login == "mateus" && senha == "sergio"){
+    if(login == "mateusAdm" && senha == "mateus"){
         alert('Sucesso');
-        location.href = "/PROJETO FINAL/index.html";
-    }else{
+        location.href = "../Mateus/mateusAugusto.html";
+    }
+    else if(login == "sergioAdm" && senha == "sergio"){
+        alert('Sucesso');
+        location.href = "../Sergio/sergio.html";
+    }
+    else{
         alert('Usuario ou senha incorretos');
     }
 }

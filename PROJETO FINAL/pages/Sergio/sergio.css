@@ -18,7 +18,7 @@ body{
     background-image: url("../../imagens/fundo_plano_sergio.png");
     background-size: cover;
     background-repeat: no-repeat;
-    width: fit-content;
+    width: 100%;
 }
 
 .containerTitulo{
@@ -329,11 +329,17 @@ footer .ultimaLinha .text a{
 
     .containerTitulo{
         width: fit-content;
+        margin-left: 20px;
     }
 
     .equipe{
         flex-wrap: no-wrap;
         height: auto;
+        margin-left: 20px;
+    }
+
+    footer{
+        display: block;
     }
 
     footer .copyright{
@@ -343,20 +349,33 @@ footer .ultimaLinha .text a{
     
     
     footer .ultimaLinha{
-        display: flex;
+        display: flex;;
         justify-content: space-between;
         align-items: center;
         margin: 10px;
+        flex-direction: column;
     }
     
+    footer p{
+        text-align: center;
+    }
     
-    footer .ultimaLinha .icons a{
-        margin-left: 28px;
+    footer .ultimaLinha .icons{
         font-size: 16px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
     }
     
-    footer .ultimaLinha .text a{
-        margin-left: 14px;
+    footer .ultimaLinha .text{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagemFundo{
+        width: fit-content;
     }
 }
 
