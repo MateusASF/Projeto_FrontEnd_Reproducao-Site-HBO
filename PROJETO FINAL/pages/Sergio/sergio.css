@@ -379,6 +379,18 @@ footer .ultimaLinha .text a{
     }
 }
 
+.videoContent{
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContent iframe{
+    width:100%;
+    height: 50vw;
+}
+
+
 @media (max-width: 690px){
     .equipe ul li{
         margin: 10px 0;

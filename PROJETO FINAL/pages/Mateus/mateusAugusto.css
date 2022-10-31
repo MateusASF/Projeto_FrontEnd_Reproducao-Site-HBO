@@ -312,6 +312,17 @@ footer .ultimaLinha .text a{
     width: 90px;
 }
 
+.videoContent{
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContent iframe{
+    width:100%;
+    height: 50vw;
+}
+
 @media (max-width: 850px){
     .menu-links a{
         display: none;
