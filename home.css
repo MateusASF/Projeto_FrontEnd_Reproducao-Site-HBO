@@ -40,11 +40,13 @@ nav ul li{
     opacity: 100%;
 }
 
+
 .estreia{
     color: rgb(255, 209, 176);
-    margin-bottom: 35px;
+    text-shadow: #000 1px 2px 2px;
+    margin-bottom: 10px;
     font-size: 32px;
-    text-shadow: none;
+
 }
 
 .textoHome h2{
