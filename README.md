@@ -14,4 +14,4 @@ O projeto tem como base o site da <a href="https://www.hbomax.com/br/pt">HBO Max
 
 ## Link da página estática
 - O projeto se encontra no link abaixo</br>
->https://mateusasf.github.io/ProjetoFinal_FrontEstatico/
+> https://mateusasf.github.io/Projeto_FrontEnd_Reproducao-Site-HBO/
